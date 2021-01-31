@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Responsive</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <div class="burger_menu">
+          <span class="burger_row"></span>
+          <span class="burger_row"></span>
+          <span class="burger_row"></span>
+        </div>
+        <nav class="nav">
+          <a href="#blog" class="navlink"> <span> Blog </span> </a>
+          <a href="#about" class="navlink"> <span> About </span> </a>
+          <a href="#archive" class="navlink"> <span> Archive </span> </a>
+          <a href="#contact" class="navlink"> <span> Contact </span> </a>
+        </nav>
+        <a href="#" class="logo">Travel<span class="black">Blog</span></a>
+      </div>
+
+      <div class="header_caption" id="blog">
+        <h2 class="header_heading">My amazing travel blog</h2>
+        <p class="header_text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+          aperiam, consequatur culpa nisi asperiores consequuntur explicabo nam,
+          voluptatibus tempore non placeat tempora delectus deleniti, alias sed
+          voluptates dolores nesciunt.
+        </p>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="column left_col">
+        <article class="card" id="about">
+          <img src="./img/post1.jpg" alt="post-img" class="avatar" />
+          <div class="article_body">
+            <h2 class="article_header">And again - it's totally amazing</h2>
+            <p class="article_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              aperiam, consequatur culpa nisi asperiores consequuntur explicabo
+              nam, voluptatibus tempore non placeat tempora delectus deleniti,
+              alias sed voluptates dolores nesciunt.
+            </p>
+          </div>
+          <div class="date">
+            <span class="date_num">07</span>
+            <span class="date_day">mar</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./img/post2.jpg" alt="post-img" class="avatar" />
+          <div class="article_body">
+            <h2 class="article_header">Top 10 travel tips</h2>
+            <p class="article_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              aperiam, consequatur culpa nisi asperiores consequuntur explicabo
+              nam, voluptatibus tempore non placeat tempora delectus deleniti,
+              alias sed voluptates dolores nesciunt.
+            </p>
+          </div>
+          <div class="date">
+            <span class="date_num">06</span>
+            <span class="date_day">mar</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./img/post3.jpg" alt="post-img" class="avatar" />
+          <div class="article_body">
+            <h2 class="article_header">Nice minimalist travel</h2>
+            <p class="article_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              aperiam, consequatur culpa nisi asperiores consequuntur explicabo
+              nam, voluptatibus tempore non placeat tempora delectus deleniti,
+              alias sed voluptates dolores nesciunt.
+            </p>
+          </div>
+          <div class="date">
+            <span class="date_num">04</span>
+            <span class="date_day">mar</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./img/post4.jpg" alt="post-img" class="avatar" />
+          <div class="article_body">
+            <h2 class="article_header" id="archive">With amazing regions</h2>
+            <p class="article_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              aperiam, consequatur culpa nisi asperiores consequuntur explicabo
+              nam, voluptatibus tempore non placeat tempora delectus deleniti,
+              alias sed voluptates dolores nesciunt.
+            </p>
+          </div>
+          <div class="date">
+            <span class="date_num">01</span>
+            <span class="date_day">mar</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="column right_col">
+        <article class="card_news">
+          <img src="./img/news1.jpg" alt="news-img" class="avatar" />
+          <div class="article_body">
+            <h2 class="article_header">Breaking news</h2>
+            <p class="article_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              eius explicabo perferendis maxime, ad enim, asperiores modi
+              inventore eligendi dignissimos consequatur dolores placeat, nisi
+              omnis quas. Non totam in impedit?
+            </p>
+            <a href="#" class="article_btn"> learn more...</a>
+          </div>
+        </article>
+
+        <article class="card_news">
+          <img src="./img/news2.jpg" alt="news-img" class="avatar" />
+          <div class="article_body">
+            <h2 class="article_header">Second news on the Travel blog</h2>
+            <p class="article_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              eius explicabo perferendis maxime, ad enim, asperiores modi
+              inventore eligendi dignissimos consequatur dolores placeat, nisi
+              omnis quas. Non totam in impedit?
+            </p>
+            <a href="#" class="article_btn"> learn more...</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_info" id="contact">
+        <p>Copyright 2020, Epam systems</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <div class="footer_info">
+        <p>Design and coding</p>
+        <p>by name</p>
+      </div>
+    </footer>
+
+    <script>
+      const menu = document.querySelector(".burger_menu");
+      const navBlock = document.querySelector(".nav");
+
+      menu.addEventListener("click", (e) => {
+        navBlock.classList.toggle("navBurger");
+
+        if (navBlock.classList.contains("navBurger")) {
+          menu.classList.add("burger_closed");
+        } else {
+          menu.classList.remove("burger_closed");
+        }
+      });
+
+      navBlock.addEventListener("click", (e) => {
+        if (e.target.tagName === "SPAN") {
+          navBlock.classList.remove("navBurger");
+          menu.classList.remove("burger_closed");
+        }
+      });
+    </script>
+  </body>
+</html>
